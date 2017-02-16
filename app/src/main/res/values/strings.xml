@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CleanRoom</string>
+    <string name="send">Отправить</string>
+    <string name="message_to_users">Сообщение для других пользователей</string>
+    <string name="connection_error">Ошибка соединения</string>
+    <string name="hostel">Общежитие</string>
+    <string name="create_new">Добавить</string>
+    <string name="floor">Этаж</string>
+    <string name="floor_text_for_notification">этаж :</string>
+    <string name="last_notifications">Последние оповещения</string>
+    <string name="invalid_hostel">Не правильно заполнено общежитие</string>
+    <string name="enter">Вход</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="login_min_size">Логин(от 5 до 12 символов)</string>
+    <string name="password_min_size">Пароль(от 6 символов)</string>
+    <string name="repeat_password">Повторить пароль</string>
+    <string name="name">Имя</string>
+    <string name="register">Регистрация</string>
+    <string name="restore_password">Восстановить пароль</string>
+    <string name="write_in_all_fields">Заполните все поля</string>
+    <string name="write_in_one_field">Заполните поле</string>
+    <string name="different_passwords">Различные пароли</string>
+    <string name="your_answer_delivered">Ваш ответ успешно доставлен</string>
+    <string name="e_mail">e-mail</string>
+    <string name="remember">Запомнить</string>
+    <string name="you_not_enter_to_oficial_group">Вы, не состоите в официальной группе вконтакте</string>
+    <string name="registration_impossible">Регистрация невозможна!</string>
+    <string name="its_true">Правда ли это?</string>
+    <string name="truth">правда</string>
+    <string name="nonsense">чушь</string>
+    <string name="enter_email_for_restore_password">Введите e-mail для восстановления пароля</string>
+    <string name="new_password_is_on_your_email">Новый пароль выслан Вам на почту</string>
+    <string name="your_notifications_is_send">Ваше оповещение отправлено</string>
+    <string name="time_unknown">Время не определено</string>
+    <string name="warning_to_exit">Вы уверены, что хотите выйти из аккаунта?</string>
+
+    <integer name="com_vk_sdk_AppId">5760155</integer>
+</resources>

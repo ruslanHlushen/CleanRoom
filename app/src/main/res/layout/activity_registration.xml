@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/main_green_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_Registration_textView_actionBarTittle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_4"/>
+
+            <ImageView
+                android:id="@+id/activity_Registration_imageView_actionBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/padding_margin_0"
+                app:srcCompat="@drawable/ic_done_white_24dp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/activity_Registration_imageLogin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/padding_margin_1"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"/>
+
+
+                    <EditText
+                        android:id="@+id/activity_Registration_DelayAutoCompleteTextViewLogin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_marginRight="@dimen/padding_margin_5"
+                        android:layout_weight="10"
+                        android:hint="@string/login_min_size"
+                        android:imeOptions="flagNoExtractUi|actionSearch"
+                        android:inputType="textCapSentences"
+                        android:maxLength="@integer/max_login_length"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/darker_gray"/>
+
+                    <ProgressBar
+                        android:id="@+id/activity_Registration_ProgressBarLogin"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/padding_margin_3"
+                        android:layout_weight="1"
+                        android:progressDrawable="@drawable/my_progress_bar"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"/>
+
+                    <EditText
+                        android:id="@+id/activity_Registration_editText_Email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_marginRight="@dimen/padding_margin_2"
+                        android:layout_weight="11"
+                        android:hint="@string/e_mail"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/activity_Registration_imageHostel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/activity_Registration_AutoCompleteTextView_hostel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_marginRight="@dimen/padding_margin_2"
+                        android:layout_weight="11"
+                        android:hint="@string/hostel"
+                        android:imeOptions="flagNoExtractUi|actionSearch"
+                        android:inputType="textCapSentences"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"/>
+
+                    <EditText
+                        android:id="@+id/activity_Registration_editText_Floor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_marginRight="@dimen/padding_margin_5"
+                        android:layout_weight="11"
+                        android:hint="@string/floor"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/activity_Registration_imagePassword"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"/>
+
+                    <EditText
+                        android:id="@+id/activity_Registration_editText_Password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_marginRight="@dimen/padding_margin_5"
+                        android:layout_weight="11"
+                        android:hint="@string/password_min_size"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/activity_Registration_imageRepeatPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"/>
+
+                    <EditText
+                        android:id="@+id/activity_Registration_editText_repeatPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_margin_2"
+                        android:layout_marginRight="@dimen/padding_margin_5"
+                        android:layout_weight="11"
+                        android:hint="@string/repeat_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/activity_registration_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/my_progress_bar"
+        android:padding="@dimen/big_progress_padding"
+        android:visibility="gone"/>
+
+</RelativeLayout>

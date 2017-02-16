@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewNotificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/main_green_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_NewNotification_textView_actionBarTittle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/create_new"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_4"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/newNotification_editText_floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_margin_4"
+            android:hint="@string/floor"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/newNotification_editText_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_margin_4"
+            android:hint="@string/message_to_users"
+            android:maxLength="@integer/max_message_length"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/newNotification_cardVew_Button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/big_buttons"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/padding_margin_3"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_5"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/activity_newNotification_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/my_progress_bar"
+        android:padding="@dimen/big_progress_padding"
+        android:visibility="gone"/>
+
+</RelativeLayout>
