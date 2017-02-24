@@ -8,63 +8,73 @@
     android:background="@color/milk_color"
     tools:context=".activities.MainActivity">
 
-    <LinearLayout
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="?android:attr/actionBarSize"
-            android:background="@color/main_green_color"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
 
-            <ImageView
-                android:id="@+id/activity_main_imageView_actionBar_Exit"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:padding="@dimen/padding_margin_0"
-                android:rotation="180"
-                app:srcCompat="@drawable/ic_exit_to_app_white_24dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/main_green_color"
+                android:orientation="horizontal"
+                app:layout_scrollFlags="scroll|enterAlways">
 
-            <TextView
-                android:id="@+id/activity_main_textView_actionBarTittle"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:gravity="center"
-                android:text="@string/last_notifications"
-                android:textAllCaps="true"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/text_size_3"/>
+                <ImageView
+                    android:id="@+id/activity_main_imageView_actionBar_Exit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/padding_margin_0"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_exit_to_app_white_24dp"/>
 
-            <ImageView
-                android:id="@+id/activity_main_imageView_actionBar"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:padding="@dimen/padding_margin_0"
-                app:srcCompat="@drawable/ic_add_circle_white_24dp"/>
+                <TextView
+                    android:id="@+id/activity_main_textView_actionBarTittle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:text="@string/last_notifications"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_3"/>
 
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/activity_main_imageView_actionBar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/padding_margin_0"
+                    app:srcCompat="@drawable/ic_add_circle_white_24dp"/>
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
 
         <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
             android:id="@+id/activity_main_SwipyRefreshLayout"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             app:srl_direction="both">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/activity_main_recycler_last_notifications"
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"/>
+                android:layout_height="wrap_content"/>
 
         </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
 
-    </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
 
     <ProgressBar
         android:id="@+id/activity_main_progressBar"
